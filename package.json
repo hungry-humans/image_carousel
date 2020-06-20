@@ -1,17 +1,16 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "image_carousel",
+  "description": "> Project description",
   "author": "",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
-    "seed": "node database/seeds.js"
+    "start": "nodemon server/index.js"
   },
   "dependencies": {
+    "babel-loader": "^8.1.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "faker": "^4.1.0",
@@ -23,6 +22,21 @@
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/core": "^7.10.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungry-humans/image_carousel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hungry-humans/image_carousel/issues"
+  },
+  "homepage": "https://github.com/hungry-humans/image_carousel#readme"
 }
