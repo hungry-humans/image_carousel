@@ -30,17 +30,7 @@ class App extends React.Component {
 
     return (
       <React.Fragment>
-        <img src="https://foodimages7528.s3-us-west-1.amazonaws.com/yelpLogo.png" alt="none"/>
-        <div>
-        {this.state.imageData.map(ele => {
-          return (
-            <React.Fragment>
-            <span key={ele.id}> {ele.resName} {ele.numberOfReviews} </span> <br/>
-
-            </React.Fragment>
-          )
-        })}
-        </div>
+        <img src="https://foodimages7528.s3-us-west-1.amazonaws.com/yelpLogo.png" alt="none"/><hr/>
       </React.Fragment>
 
     );
