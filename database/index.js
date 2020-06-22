@@ -9,9 +9,8 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query("SELECT 1 + 1 AS solution", function (error, results, fields) {
-  if (error) throw error;
-  console.log("-----------Connection to MYSQL established----------");
+connection.query("SELECT 1 + 1 AS solution", function (err, res) {
+  err ? console.log(err) : console.log('Connected To Mysql')
 });
 
 
