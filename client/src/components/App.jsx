@@ -1,5 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
+import Images from './Images.jsx'
+import Restaurants from './Restaurants.jsx'
+
 
 
 class App extends React.Component {
@@ -29,8 +32,11 @@ class App extends React.Component {
   render() {
 
     return (
+
       <React.Fragment>
-        <img src="https://foodimages7528.s3-us-west-1.amazonaws.com/yelpLogo.png" alt="none"/><hr/>
+        <img src="https://foodimages7528.s3-us-west-1.amazonaws.com/yelpLogo.png" alt="none"/><hr></hr>
+        <Images imageData={this.state.imageData}/>
+        <Restaurants imageData={this.state.imageData} />
       </React.Fragment>
 
     );
@@ -38,3 +44,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+

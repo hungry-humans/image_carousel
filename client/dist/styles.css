@@ -1,10 +1,28 @@
-.img {
-  width: 10%;
+table {
+  padding-left: 32px;
+}
+td, tr, th {
+  min-width: 218px;
+  max-width: 218px;
+  min-height: 218px;
+  max-height: 218px;
 }
 
-.resName {
+body {
+  width: 1200px;
+}
+.foods {
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  min-width: 218px;
+  max-width: 218px;
+  min-height: 218px;
+  max-height: 218px;
+  padding: 3px;
+  position: static;
+  border-radius: 7px;
+}
 
+.arrows {
+  padding-bottom: 70px;
+  width: 2%;
 }
