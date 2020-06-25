@@ -1,6 +1,9 @@
 import React from "react";
 import $ from "jquery";
 import Images from "./Images.jsx";
+import Collections from './Collections.jsx'
+import NavBar from './NavBar.jsx';
+import NavMenu from './NavMenu.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -27,15 +30,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <img
-          src="https://foodimages7528.s3-us-west-1.amazonaws.com/yelpLogo.png"
-          alt="none"
-        />
+        <NavBar />
+        <NavMenu />
         <hr></hr>
-        <Images imageData={this.state.imageData} />
+        <Images imageData={this.state.imageData} /><br/>
       </div>
     );
   }
 }
 
 export default App;
+
+// <Collections imageData={this.state.imageData} />;

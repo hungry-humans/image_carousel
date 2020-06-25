@@ -19,7 +19,7 @@ body {
   max-height: 30px;
   border-radius: 20px;
   position: fixed;
-  top: 220px;
+  top: 270px;
   left: 28px;
 }
 
@@ -31,7 +31,7 @@ body {
   max-height: 30px;
   border-radius: 20px;
   position: fixed;
-  top: 220px;
+  top: 270px;
   left: 1192px;
 
 }
@@ -72,7 +72,7 @@ p, h4 {
   color: #2b273c;
 }
 
-.revs {
+.revs, .navBar {
   font-size: 14px;
   color: #757280;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -81,4 +81,118 @@ p, h4 {
 .resInfo:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* nav bar css */
+
+.yelpLogo {
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 40px;
+  max-height: 40px;
+  margin-right: 50px;
+}
+
+.yelpLogo:hover {
+  cursor: pointer;
+}
+
+.navBar {
+  display: flex;
+  padding: 24px 0px 0;
+  pointer-events: auto;
+}
+
+.messagesLogo {
+  min-width: 15px;
+  max-width: 15px;
+  min-height: 14px;
+  max-height: 14px;
+}
+
+.searchBar, .locationBar {
+  margin-left: 10px;
+  border: none;
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+  width: 20%;
+  border-radius: 4px 0 0 4px;
+  height: 48px;
+  transition: border-color .2s ease-in-out;
+  background: transparent;
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+}
+.searchBar {
+  border-right: 1px solid gray;
+}
+
+.redbutton {
+  min-width: 56px;
+  max-width: 56px;
+  min-height: 48px;
+  max-height: 48px;
+}
+
+.redbutton:hover {
+  cursor: pointer;
+}
+
+.navBarText {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.messagesLogo {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  padding-left: 25px!important;
+  padding-bottom: 8px!important;
+}
+
+.userIcon {
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  border-color: #eeeeef;
+  padding-top: 6px!important;
+  padding-left: 25px!important;
+  padding-bottom: 8px!important;
+}
+
+.navBarText:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+
+.userIcon:hover {
+  cursor: pointer;
+}
+
+.messagesLogo:hover {
+
+  cursor: pointer;
+}
+
+.navMenuItems {
+  display: inline-block;
+  padding: 16px;
+  border-bottom: 4px solid transparent;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(43, 39, 60);
+  text-align: left;
 }
